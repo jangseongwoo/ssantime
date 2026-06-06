@@ -1,5 +1,33 @@
 [
   {
+    "deal_id": "ruliweb-k1",
+    "title": "테스트 상품 (50,000원/무료)",
+    "deal_total": 50000,
+    "shipping_known": true,
+    "shipping_fee": 0,
+    "lprice": null,
+    "gap": 1000,
+    "mall_name": null,
+    "buy_url": "http://example/k1",
+    "source_url": "http://example/k1",
+    "image_src_url": null,
+    "created_iso": "2026-06-06T05:42:06.991616+00:00"
+  },
+  {
+    "deal_id": "ruliweb-k2",
+    "title": "테스트 상품 (50,000원/무료)",
+    "deal_total": 50000,
+    "shipping_known": true,
+    "shipping_fee": 0,
+    "lprice": null,
+    "gap": 1000,
+    "mall_name": null,
+    "buy_url": "http://example/k2",
+    "source_url": "http://example/k2",
+    "image_src_url": null,
+    "created_iso": "2026-06-06T05:42:06.992475+00:00"
+  },
+  {
     "deal_id": "ruliweb-r1",
     "title": "테스트 상품 (50,000원/무료)",
     "deal_total": 50000,
