@@ -8,29 +8,9 @@
   --shadow-1:0 1px 2px rgba(14,23,38,.05), 0 4px 14px rgba(14,23,38,.06);
   --shadow-2:0 8px 28px rgba(14,23,38,.12);
   --r-sm:9px; --r-md:14px; --r-lg:18px; --r-pill:999px;
-  --maxw:1240px;
+  --maxw:960px;
   --font:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard Variable','Pretendard','Noto Sans KR','Segoe UI',Roboto,system-ui,sans-serif;
   --ease:cubic-bezier(.22,.61,.36,1);
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0C1410; --bg-elev:#111A15; --card:#15201A; --card-2:#1E2A23;
-  --ink:#F2F5F1; --ink-2:#B8C0BB; --ink-3:#8A938D; --line:#283530;
-  --brand:#2ED98A; --brand-ink:#5BE8A8; --brand-soft:#103325; --brand-strong:#27C77D;
-  --hot:#FF6B6D; --hot-ink:#FF8D8D; --hot-soft:#3a1d1f;
-  --strike:#E6A79E;
-  --strike-line:#C0827A;
-  --shadow-1:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.5);
-  --shadow-2:0 12px 36px rgba(0,0,0,.62);
-}}
-:root[data-theme="dark"]{
-  --bg:#0C1410; --bg-elev:#111A15; --card:#15201A; --card-2:#1E2A23;
-  --ink:#F2F5F1; --ink-2:#B8C0BB; --ink-3:#8A938D; --line:#283530;
-  --brand:#2ED98A; --brand-ink:#5BE8A8; --brand-soft:#103325; --brand-strong:#27C77D;
-  --hot:#FF6B6D; --hot-ink:#FF8D8D; --hot-soft:#3a1d1f;
-  --strike:#E6A79E;
-  --strike-line:#C0827A;
-  --shadow-1:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.5);
-  --shadow-2:0 12px 36px rgba(0,0,0,.62);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -53,24 +33,12 @@ button{font-family:inherit;cursor:pointer}
 .brand-name{font-size:22px;letter-spacing:-.02em;white-space:nowrap;color:var(--ink)}
 .brand-name .wm-time,.brand-mini .wm-time{color:var(--ink)}
 .brand-name .wm-deal,.brand-mini .wm-deal{color:var(--brand)}
-:root[data-theme="dark"] .brand-tag{box-shadow:none}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .brand-tag{box-shadow:none}}
 .tagline{margin:14px 0 2px;font-size:18px;line-height:1.35;letter-spacing:-.01em}
 .tagline-strong{color:var(--brand-ink);font-weight:900;font-size:1.06em}
 .tagline-soft{color:var(--ink-2);font-weight:600}
 .trust-line{margin:7px 0 0;font-size:12px;font-weight:600;color:var(--ink-3);letter-spacing:-.005em}
 .updated{margin:6px 0 0;font-size:13px;color:var(--ink-3)}
 .deal-count{color:var(--brand-ink);font-weight:800}
-.theme-toggle{position:relative;width:42px;height:42px;border:1px solid var(--line);
-  background:var(--card);border-radius:var(--r-pill);color:var(--ink);
-  display:grid;place-items:center;flex:0 0 auto;transition:transform .15s var(--ease),background .2s}
-.theme-toggle:active{transform:scale(.92)}
-.theme-icon{position:absolute;font-size:18px;line-height:1;transition:opacity .2s,transform .25s var(--ease)}
-.theme-icon--moon{opacity:0;transform:rotate(-40deg) scale(.6)}
-.theme-icon--sun{opacity:1}
-:root[data-theme="dark"] .theme-icon--sun{opacity:0;transform:rotate(40deg) scale(.6)}
-:root[data-theme="dark"] .theme-icon--moon{opacity:1;transform:none}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .theme-icon--sun{opacity:0;transform:rotate(40deg) scale(.6)}:root:not([data-theme="light"]) .theme-icon--moon{opacity:1;transform:none}}
 .controls{position:sticky;top:0;z-index:20;max-width:var(--maxw);margin:0 auto;
   padding:10px 16px 12px;background:color-mix(in srgb,var(--bg) 88%,transparent);
   backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);
@@ -101,14 +69,10 @@ button{font-family:inherit;cursor:pointer}
 .chip-n{font-size:11px;color:var(--ink-3);font-weight:700}
 .chip--active{background:var(--brand);color:#fff;border-color:var(--brand)}
 .chip--active .chip-n{color:#fff;opacity:.78}
-:root[data-theme="dark"] .chip--active{color:var(--bg)}
-:root[data-theme="dark"] .chip--active .chip-n{color:var(--bg)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip--active{color:var(--bg)}:root:not([data-theme="light"]) .chip--active .chip-n{color:var(--bg)}}
 .deal-grid{list-style:none;display:grid;gap:10px;max-width:var(--maxw);
   margin:12px auto;padding:0 16px 28px;grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (min-width:560px){.deal-grid{gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (min-width:860px){.deal-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media (min-width:1120px){.deal-grid{gap:14px;grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (min-width:820px){.deal-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
   overflow:hidden;box-shadow:var(--shadow-1);transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
 @keyframes ss-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -198,8 +162,6 @@ button{font-family:inherit;cursor:pointer}
   background:var(--brand);color:#fff;border-radius:var(--r-pill);font-weight:800;font-size:14px;
   min-height:44px;transition:filter .15s}
 .no-results-reset:hover{filter:brightness(1.05)}
-:root[data-theme="dark"] .no-results-reset{color:var(--bg)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .no-results-reset{color:var(--bg)}}
 .no-results-kakao{margin-top:4px;font-size:13.5px;font-weight:700;color:var(--brand-ink);
   text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
 .no-results-kakao:hover{border-bottom-color:var(--brand-ink)}
@@ -220,12 +182,10 @@ button{font-family:inherit;cursor:pointer}
 .back-arrow{font-size:22px;line-height:1}
 .brand-mini{position:absolute;left:50%;transform:translateX(-50%);font-weight:800;font-size:15px;
   color:var(--ink);text-decoration:none;letter-spacing:-.02em}
-.deal{max-width:760px;margin:0 auto;padding:8px 18px 60px}
+.deal{max-width:600px;margin:0 auto;padding:8px 18px 60px}
 .deal-figure{margin:0 0 18px;border-radius:var(--r-lg);overflow:hidden;background:var(--card-2);
-  box-shadow:var(--shadow-1);aspect-ratio:1/1;max-height:440px}
+  box-shadow:var(--shadow-1);aspect-ratio:1/1}
 .deal-figure .deal-img{width:100%;height:100%;object-fit:contain;background:#fff}
-:root[data-theme="dark"] .deal-figure .deal-img{background:#f3f1ec}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .deal-figure .deal-img{background:#f3f1ec}}
 .deal-figure--empty{display:grid;place-items:center;align-content:center;gap:10px;aspect-ratio:16/9;
   background:linear-gradient(135deg,var(--card-2),color-mix(in srgb,var(--card-2) 55%,var(--bg)))}
 .ph-tag{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;
@@ -257,8 +217,6 @@ button{font-family:inherit;cursor:pointer}
 .lprice{font-size:15px;color:var(--ink-2);font-weight:600}
 .lprice s{color:var(--strike);font-weight:700;text-decoration-thickness:1.5px;
   text-decoration-color:var(--strike-line)}
-:root[data-theme="dark"] .row--lprice .row-key{color:var(--ink)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .row--lprice .row-key{color:var(--ink)}}
 .lp-mall{display:inline-block;margin-left:6px;font-size:11.5px;color:var(--ink-3);font-weight:600}
 .row--gap{background:var(--brand-soft);margin:4px -20px 0;padding:15px 20px;border-radius:0 0 var(--r-lg) var(--r-lg)}
 .savings{font-size:21px;font-weight:900;color:var(--brand-ink);letter-spacing:-.02em}
@@ -331,18 +289,6 @@ button{font-family:inherit;cursor:pointer}
   transition:background .15s,border-color .15s,color .15s}
 .share-btn:hover{background:var(--card-2);color:var(--ink-2)}
 .share-btn.copied{color:var(--brand-ink);border-color:var(--brand)}
-@media (min-width:768px){
-  .deal{max-width:960px;display:grid;
-    grid-template-columns:minmax(0,400px) minmax(0,1fr);
-    column-gap:40px;align-items:start;padding-top:20px}
-  .deal-figure{grid-column:1;margin:0;position:sticky;top:80px;align-self:start;max-height:440px}
-  .deal-body{grid-column:2;min-width:0}
-  .identity{grid-column:1/-1}
-  .affiliate-notice{grid-column:1/-1}
-  .deal:has(.deal-figure--empty){grid-template-columns:minmax(0,1fr);max-width:620px}
-  .deal:has(.deal-figure--empty) .deal-figure--empty,
-  .deal:has(.deal-figure--empty) .deal-body{grid-column:1}
-}
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms !important;animation-delay:0ms !important;transition-duration:.001ms !important}
   .deal-grid.js-anim .card{animation:none;opacity:1;transform:none}
