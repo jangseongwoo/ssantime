@@ -12,7 +12,9 @@
     "source_url": "https://bbs.ruliweb.com/market/board/1020/read/104612",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_8811054/88110548356.26.jpg",
     "created_iso": "2026-06-06T05:47:11.716104+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "ppomppu-709456",
@@ -27,7 +29,9 @@
     "source_url": "https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=112&&no=709456",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_5964400/59644003704.20260413115207.jpg",
     "created_iso": "2026-06-06T05:47:12.859684+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "ppomppu-709560",
@@ -42,7 +46,9 @@
     "source_url": "https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=112&&no=709560",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_6022429/60224291160.jpg",
     "created_iso": "2026-06-06T05:47:13.216747+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "ppomppu-709557",
@@ -57,7 +63,9 @@
     "source_url": "https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=112&&no=709557",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_5874265/58742653972.20260201015041.jpg",
     "created_iso": "2026-06-06T05:47:13.713147+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "ppomppu-709554",
@@ -72,7 +80,9 @@
     "source_url": "https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=112&&no=709554",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_5263111/52631112967.20250123170917.jpg",
     "created_iso": "2026-06-06T05:47:14.258025+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "ppomppu-709553",
@@ -87,7 +97,9 @@
     "source_url": "https://www.ppomppu.co.kr/zboard/view.php?id=ppomppu&page=1&divpage=112&&no=709553",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_4907285/49072853885.11.jpg",
     "created_iso": "2026-06-06T05:47:14.544515+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "quasarzone-1959222",
@@ -102,7 +114,9 @@
     "source_url": "https://quasarzone.com/bbs/qb_saleinfo/views/1959222",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_6033157/60331575154.jpg",
     "created_iso": "2026-06-06T05:47:16.515175+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "quasarzone-1959207",
@@ -117,7 +131,9 @@
     "source_url": "https://quasarzone.com/bbs/qb_saleinfo/views/1959207",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_5747351/57473518843.20251107112614.jpg",
     "created_iso": "2026-06-06T05:47:17.135248+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "quasarzone-1959134",
@@ -132,7 +148,9 @@
     "source_url": "https://quasarzone.com/bbs/qb_saleinfo/views/1959134",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_6008595/60085951884.20260518170441.jpg",
     "created_iso": "2026-06-06T05:47:18.063043+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   },
   {
     "deal_id": "quasarzone-1959099",
@@ -147,6 +165,8 @@
     "source_url": "https://quasarzone.com/bbs/qb_saleinfo/views/1959099",
     "image_src_url": "https://shopping-phinf.pstatic.net/main_5393718/53937180380.20250403093338.jpg",
     "created_iso": "2026-06-06T05:47:19.072301+00:00",
-    "naver_url": null
+    "naver_url": null,
+    "discount_guide": null,
+    "product_summary": null
   }
 ]
