@@ -37,6 +37,8 @@ button{font-family:inherit;cursor:pointer}
 .tagline-strong{color:var(--brand-ink);font-weight:900;font-size:1.06em}
 .tagline-soft{color:var(--ink-2);font-weight:600}
 .trust-line{margin:7px 0 0;font-size:12px;font-weight:600;color:var(--ink-3);letter-spacing:-.005em}
+.time-note{margin:6px 0 0;font-size:12px;font-weight:600;color:var(--ink-3);letter-spacing:-.005em;line-height:1.45}
+.time-note--box{margin:0 2px 14px;padding:10px 13px;background:var(--card-2);border-radius:var(--r-md);font-weight:600;font-size:12.5px;line-height:1.5;text-align:center}
 .updated{margin:6px 0 0;font-size:13px;color:var(--ink-3)}
 .deal-count{color:var(--brand-ink);font-weight:800}
 .controls{position:sticky;top:0;z-index:20;max-width:var(--maxw);margin:0 auto;
