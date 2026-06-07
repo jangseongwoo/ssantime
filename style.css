@@ -1,7 +1,7 @@
 :root{
   --bg:#F7F8F6; --bg-elev:#FFFFFF; --card:#FFFFFF; --card-2:#EEF1ED;
   --ink:#0E1726; --ink-2:#525C6B; --ink-3:#5C6573; --line:#E6EAE7;
-  --ink-faint:#7A828D;
+  --ink-faint:#7A828D; --ink-ghost:#AEB4BC;
   --brand:#0FA968; --brand-ink:#0B8F57; --brand-soft:#E7F7EF; --brand-strong:#0A7A4A;
   --save-ink:#0A7A4A;
   --hot:#D9363E; --hot-ink:#D9363E; --hot-soft:#ffe9e9;
@@ -291,7 +291,7 @@ button{font-family:inherit;cursor:pointer}
 .identity-a b{color:var(--save-ink);font-weight:800}
 .page-deal .identity{margin-top:24px}
 .affiliate-notice{max-width:var(--maxw-read);margin:12px auto 0;padding:0 16px;text-align:center;
-  font-size:12px;line-height:1.5;font-weight:400;color:var(--ink-faint)}
+  font-size:12px;line-height:1.5;font-weight:400;color:var(--ink-ghost)}
 .detail-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;
   margin-top:24px;padding-top:18px;border-top:1px solid var(--line);flex-wrap:wrap}
 .source{color:var(--ink-2);text-decoration:none;font-size:14px;font-weight:600}
