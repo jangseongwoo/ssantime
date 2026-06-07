@@ -322,32 +322,16 @@ button{font-family:inherit;cursor:pointer}
 .share-btn:hover{background:var(--card-2);color:var(--ink-2)}
 .share-btn.copied{color:var(--brand-ink);border-color:var(--brand)}
 @media (min-width:768px){
-  .deal{max-width:920px;display:grid;
-    grid-template-columns:minmax(0,420px) minmax(0,1fr);
+  .deal{max-width:960px;display:grid;
+    grid-template-columns:minmax(0,400px) minmax(0,1fr);
     column-gap:40px;align-items:start;padding-top:20px}
-  .deal-figure{margin:0;position:sticky;top:80px;align-self:start;max-height:420px}
-  .deal-head{grid-column:2;margin-top:4px;margin-bottom:14px}
-  .prices{grid-column:2}
-  .save-math{grid-column:2}
-  .price-basis{grid-column:2}
-  .buy-btn{grid-column:2}
-  .buy-note{grid-column:2}
-  .more-deals{grid-column:2}
-  .detail-foot{grid-column:2}
-  .share-btn{grid-column:2}
+  .deal-figure{grid-column:1;margin:0;position:sticky;top:80px;align-self:start;max-height:440px}
+  .deal-body{grid-column:2;min-width:0}
   .identity{grid-column:1/-1}
   .affiliate-notice{grid-column:1/-1}
   .deal:has(.deal-figure--empty){grid-template-columns:minmax(0,1fr);max-width:620px}
-  .deal:has(.deal-figure--empty) .deal-figure--empty{grid-column:1}
-  .deal:has(.deal-figure--empty) .deal-head,
-  .deal:has(.deal-figure--empty) .prices,
-  .deal:has(.deal-figure--empty) .save-math,
-  .deal:has(.deal-figure--empty) .price-basis,
-  .deal:has(.deal-figure--empty) .buy-btn,
-  .deal:has(.deal-figure--empty) .buy-note,
-  .deal:has(.deal-figure--empty) .more-deals,
-  .deal:has(.deal-figure--empty) .detail-foot,
-  .deal:has(.deal-figure--empty) .share-btn{grid-column:1}
+  .deal:has(.deal-figure--empty) .deal-figure--empty,
+  .deal:has(.deal-figure--empty) .deal-body{grid-column:1}
 }
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms !important;animation-delay:0ms !important;transition-duration:.001ms !important}
