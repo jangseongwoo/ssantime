@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="싼타임 핫딜 · 실시간 핫딜 최저가 비교">
-  <meta name="theme-color" content="#fbf9f6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0e0f11" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C1410" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:title" content="싼타임 핫딜">
   <meta property="og:description" content="싼타임 핫딜 · 실시간 핫딜 최저가 비교">
@@ -19,13 +19,14 @@
   <header class="site-header">
     <div class="header-row">
       <div class="brand">
-        <span class="brand-tag" aria-hidden="true">싼</span>
-        <h1 class="brand-name">싼타임 핫딜</h1>
+        <span class="brand-tag" aria-hidden="true">↓</span>
+        <h1 class="brand-name"><span class="wm-time">싼타임</span><span class="wm-deal">핫딜</span></h1>
       </div>
       <button class="theme-toggle" type="button" aria-label="라이트/다크 모드 전환" title="라이트/다크 모드 전환" aria-pressed="false" data-theme-toggle><span class="theme-icon theme-icon--sun" aria-hidden="true">☀</span><span class="theme-icon theme-icon--moon" aria-hidden="true">☾</span></button>
     </div>
-    <p class="tagline"><b class="tagline-strong">네이버 최저가보다 더 싼 딜</b>만 <span class="tagline-soft">콕 집어 모아드려요.</span></p>
-    <p class="updated"><span class="deal-count" id="deal-count">19개</span>의 딜 · <time id="updated-at" data-now>업데이트 확인 중</time></p>
+    <p class="tagline"><b class="tagline-strong">네이버 최저가보다 싼 딜</b>만 <span class="tagline-soft">콕 집어 모아드려요.</span></p>
+    <p class="trust-line">직접 판매 X · 네이버 최저가와 비교</p>
+    <p class="updated">오늘은 네이버보다 싼 딜 <span class="deal-count" id="deal-count">10건</span>을 엄선했어요 · <time id="updated-at" data-now>업데이트 확인 중</time></p>
   </header>
   <div class="controls" role="search">
     <div class="search-wrap">
@@ -35,7 +36,8 @@
     </div>
     <div class="sort-row">
       <div class="sort-seg" role="tablist" aria-label="정렬">
-        <button class="seg seg--active" type="button" data-sort="discount" aria-pressed="true">할인율순</button>
+        <button class="seg seg--active" type="button" data-sort="savings" aria-pressed="true">절약액순</button>
+        <button class="seg" type="button" data-sort="discount" aria-pressed="false">할인율순</button>
         <button class="seg" type="button" data-sort="recent" aria-pressed="false">최신순</button>
         <button class="seg" type="button" data-sort="price" aria-pressed="false">가격순</button>
       </div>
@@ -50,64 +52,67 @@
     </div>
   </div>
   <ul class="deal-grid" id="deal-grid">
-    <li class="card" data-pct="28" data-price="25720" data-gap="9780" data-ts="2026-06-06T05:47:11.716104+00:00" data-mall="롯데칠성음료 공식 스토어" data-search="[네이버] 펩시제로슈거 라임향 355ml 48캔 (25,720원/무료) 롯데칠성음료 공식 스토어">
+    <li class="card" data-pct="27" data-price="25720" data-gap="9780" data-ts="2026-06-06T05:47:11.716104+00:00" data-mall="롯데칠성음료 공식 스토어" data-search="[네이버] 펩시제로슈거 라임향 355ml 48캔 (25,720원/무료) 롯데칠성음료 공식 스토어">
       <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-104612.html">
         <div class="thumb-wrap">
         <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-104612.jpg" alt="펩시제로슈거 라임향 355ml 48캔" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">28%<span class="off">↓</span></span>
+        <span class="card-badge">27%<span class="off">↓</span></span>
         <span class="card-ship">무료배송</span>
         </div>
         <div class="card-body">
           <h2 class="card-title">펩시제로슈거 라임향 355ml 48캔</h2>
           <div class="card-prices">
           <div class="card-deal">25,720<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−9,780원</b></div>
           <div class="card-lprice">네이버 <s>35,500원</s></div>
           </div>
-          <div class="card-save">절약 <b>−9,780원</b></div>
           <div class="card-foot">
-            <span class="card-mall">롯데칠성음료</span>
+            <span class="card-mall card-mall--sell">네이버 스마트스토어</span>
+            <span class="card-mall card-mall--compare">롯데칠성음료</span>
             <time class="card-ago" datetime="2026-06-06T05:47:11.716104+00:00" data-ago="2026-06-06T05:47:11.716104+00:00"></time>
           </div>
         </div>
       </a>
     </li>
-    <li class="card" data-pct="6" data-price="79010" data-gap="4640" data-ts="2026-06-06T05:47:12.859684+00:00" data-mall="네이버" data-search="[g마켓] 불스원 ez클린 tpe 카매트 차량용(79,010원/무배) 네이버">
+    <li class="card" data-pct="5" data-price="79010" data-gap="4640" data-ts="2026-06-06T05:47:12.859684+00:00" data-mall="네이버" data-search="[g마켓] 불스원 ez클린 tpe 카매트 차량용(79,010원/무배) 네이버">
       <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ppomppu-709456.html">
         <div class="thumb-wrap">
         <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ppomppu-709456.jpg" alt="불스원 EZ클린 TPE 카매트 차량용" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">6%<span class="off">↓</span></span>
+        <span class="card-badge">5%<span class="off">↓</span></span>
         <span class="card-ship">무료배송</span>
         </div>
         <div class="card-body">
           <h2 class="card-title">불스원 EZ클린 TPE 카매트 차량용</h2>
           <div class="card-prices">
           <div class="card-deal">79,010<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−4,640원</b></div>
           <div class="card-lprice">네이버 <s>83,650원</s></div>
           </div>
-          <div class="card-save">절약 <b>−4,640원</b></div>
           <div class="card-foot">
-            <span class="card-mall">네이버</span>
+            <span class="card-mall card-mall--sell">G마켓</span>
+            <span class="card-mall card-mall--compare">네이버</span>
             <time class="card-ago" datetime="2026-06-06T05:47:12.859684+00:00" data-ago="2026-06-06T05:47:12.859684+00:00"></time>
           </div>
         </div>
       </a>
     </li>
-    <li class="card" data-pct="31" data-price="170836" data-gap="75664" data-ts="2026-06-06T05:47:13.216747+00:00" data-mall="쿠팡" data-search="[ssg몰] 역대급 k2 중헤비 롱 최고급구스다운 골든 k95 제니스 (170,836원/무료) 삼카 157,170원 쿠팡">
+    <li class="card" data-pct="30" data-price="170836" data-gap="75664" data-ts="2026-06-06T05:47:13.216747+00:00" data-mall="쿠팡" data-search="[ssg몰] 역대급 k2 중헤비 롱 최고급구스다운 골든 k95 제니스 (170,836원/무료) 삼카 157,170원 쿠팡">
       <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ppomppu-709560.html">
         <div class="thumb-wrap">
         <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ppomppu-709560.jpg" alt="역대급 K2 중헤비 롱 최고급구스다운 골든 K95 제니스 (170,836원/무료) 삼카" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">31%<span class="off">↓</span></span>
+        <span class="card-badge">30%<span class="off">↓</span></span>
         <span class="card-ship">무료배송</span>
         </div>
         <div class="card-body">
           <h2 class="card-title">역대급 K2 중헤비 롱 최고급구스다운 골든 K95 제니스 (170,836원/무료) 삼카</h2>
           <div class="card-prices">
           <div class="card-deal">170,836<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−75,664원</b></div>
           <div class="card-lprice">네이버 <s>246,500원</s></div>
           </div>
-          <div class="card-save">절약 <b>−75,664원</b></div>
           <div class="card-foot">
-            <span class="card-mall">쿠팡</span>
+            <span class="card-mall card-mall--sell">SSG</span>
+            <span class="card-mall card-mall--compare">쿠팡</span>
             <time class="card-ago" datetime="2026-06-06T05:47:13.216747+00:00" data-ago="2026-06-06T05:47:13.216747+00:00"></time>
           </div>
         </div>
@@ -124,11 +129,12 @@
           <h2 class="card-title">파렌하이트 캐시미어 100 체스터 기본코트 4종</h2>
           <div class="card-prices">
           <div class="card-deal">270,900<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−12,520원</b></div>
           <div class="card-lprice">네이버 <s>283,420원</s></div>
           </div>
-          <div class="card-save">절약 <b>−12,520원</b></div>
           <div class="card-foot">
-            <span class="card-mall">네이버</span>
+            <span class="card-mall card-mall--sell">롯데ON</span>
+            <span class="card-mall card-mall--compare">네이버</span>
             <time class="card-ago" datetime="2026-06-06T05:47:13.713147+00:00" data-ago="2026-06-06T05:47:13.713147+00:00"></time>
           </div>
         </div>
@@ -145,11 +151,12 @@
           <h2 class="card-title">한돈 삼겹살 1kg</h2>
           <div class="card-prices">
           <div class="card-deal">18,870<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−3,970원</b></div>
           <div class="card-lprice">네이버 <s>22,840원</s></div>
           </div>
-          <div class="card-save">절약 <b>−3,970원</b></div>
           <div class="card-foot">
-            <span class="card-mall">네이버</span>
+            <span class="card-mall card-mall--sell">11번가</span>
+            <span class="card-mall card-mall--compare">네이버</span>
             <time class="card-ago" datetime="2026-06-06T05:47:14.258025+00:00" data-ago="2026-06-06T05:47:14.258025+00:00"></time>
           </div>
         </div>
@@ -166,71 +173,75 @@
           <h2 class="card-title">Wpc.양산 세일러 미니 암막 UV차단 3단양산 801-14905-102</h2>
           <div class="card-prices">
           <div class="card-deal">22,320<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−9,680원</b></div>
           <div class="card-lprice">네이버 <s>32,000원</s></div>
           </div>
-          <div class="card-save">절약 <b>−9,680원</b></div>
           <div class="card-foot">
-            <span class="card-mall">옥션</span>
+            <span class="card-mall card-mall--sell">G마켓</span>
+            <span class="card-mall card-mall--compare">옥션</span>
             <time class="card-ago" datetime="2026-06-06T05:47:14.544515+00:00" data-ago="2026-06-06T05:47:14.544515+00:00"></time>
           </div>
         </div>
       </a>
     </li>
-    <li class="card" data-pct="27" data-price="10910" data-gap="4010" data-ts="2026-06-06T05:47:16.515175+00:00" data-mall="11번가" data-search="[옥션] 연양갱 밤양갱+팥양갱 4팩 총32개 11번가">
+    <li class="card" data-pct="26" data-price="10910" data-gap="4010" data-ts="2026-06-06T05:47:16.515175+00:00" data-mall="11번가" data-search="[옥션] 연양갱 밤양갱+팥양갱 4팩 총32개 11번가">
       <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/quasarzone-1959222.html">
         <div class="thumb-wrap">
         <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/quasarzone-1959222.jpg" alt="연양갱 밤양갱+팥양갱 4팩 총32개" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">27%<span class="off">↓</span></span>
+        <span class="card-badge">26%<span class="off">↓</span></span>
         </div>
         <div class="card-body">
           <h2 class="card-title">연양갱 밤양갱+팥양갱 4팩 총32개</h2>
           <div class="card-prices">
           <div class="card-deal">10,910<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−4,010원</b></div>
           <div class="card-lprice">네이버 <s>14,920원</s></div>
           </div>
-          <div class="card-save">절약 <b>−4,010원</b></div>
           <div class="card-foot">
-            <span class="card-mall">11번가</span>
+            <span class="card-mall card-mall--sell">옥션</span>
+            <span class="card-mall card-mall--compare">11번가</span>
             <time class="card-ago" datetime="2026-06-06T05:47:16.515175+00:00" data-ago="2026-06-06T05:47:16.515175+00:00"></time>
           </div>
         </div>
       </a>
     </li>
-    <li class="card" data-pct="31" data-price="177785" data-gap="79215" data-ts="2026-06-06T05:47:17.135248+00:00" data-mall="네이버" data-search="[알리] 아트뮤 11in1 usb4 썬더볼트4 도킹스테이션 u4d110 (코드+코인할인) 네이버">
+    <li class="card" data-pct="30" data-price="177785" data-gap="79215" data-ts="2026-06-06T05:47:17.135248+00:00" data-mall="네이버" data-search="[알리] 아트뮤 11in1 usb4 썬더볼트4 도킹스테이션 u4d110 (코드+코인할인) 네이버">
       <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/quasarzone-1959207.html">
         <div class="thumb-wrap">
         <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/quasarzone-1959207.jpg" alt="아트뮤 11in1 USB4 썬더볼트4 도킹스테이션 U4D110 (코드+코인할인)" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">31%<span class="off">↓</span></span>
+        <span class="card-badge">30%<span class="off">↓</span></span>
         </div>
         <div class="card-body">
           <h2 class="card-title">아트뮤 11in1 USB4 썬더볼트4 도킹스테이션 U4D110 (코드+코인할인)</h2>
           <div class="card-prices">
           <div class="card-deal">177,785<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−79,215원</b></div>
           <div class="card-lprice">네이버 <s>257,000원</s></div>
           </div>
-          <div class="card-save">절약 <b>−79,215원</b></div>
           <div class="card-foot">
-            <span class="card-mall">네이버</span>
+            <span class="card-mall card-mall--sell">알리</span>
+            <span class="card-mall card-mall--compare">네이버</span>
             <time class="card-ago" datetime="2026-06-06T05:47:17.135248+00:00" data-ago="2026-06-06T05:47:17.135248+00:00"></time>
           </div>
         </div>
       </a>
     </li>
-    <li class="card" data-pct="20" data-price="95000" data-gap="23490" data-ts="2026-06-06T05:47:18.063043+00:00" data-mall="네이버" data-search="[네이버] antec c6 curve air mesh btf 케이스 네이버">
+    <li class="card" data-pct="19" data-price="95000" data-gap="23490" data-ts="2026-06-06T05:47:18.063043+00:00" data-mall="네이버" data-search="[네이버] antec c6 curve air mesh btf 케이스 네이버">
       <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/quasarzone-1959134.html">
         <div class="thumb-wrap">
         <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/quasarzone-1959134.jpg" alt="Antec C6 CURVE AIR MESH BTF 케이스" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">20%<span class="off">↓</span></span>
+        <span class="card-badge">19%<span class="off">↓</span></span>
         </div>
         <div class="card-body">
           <h2 class="card-title">Antec C6 CURVE AIR MESH BTF 케이스</h2>
           <div class="card-prices">
           <div class="card-deal">95,000<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−23,490원</b></div>
           <div class="card-lprice">네이버 <s>118,490원</s></div>
           </div>
-          <div class="card-save">절약 <b>−23,490원</b></div>
           <div class="card-foot">
-            <span class="card-mall">네이버</span>
+            <span class="card-mall card-mall--sell">네이버 스마트스토어</span>
+            <span class="card-mall card-mall--compare">네이버</span>
             <time class="card-ago" datetime="2026-06-06T05:47:18.063043+00:00" data-ago="2026-06-06T05:47:18.063043+00:00"></time>
           </div>
         </div>
@@ -246,200 +257,31 @@
           <h2 class="card-title">도브 바디워시 1L 3개</h2>
           <div class="card-prices">
           <div class="card-deal">17,828<span class="won">원</span></div>
+          <div class="card-save"><span class="save-basis">네이버 최저가보다</span> <b>−4,522원</b></div>
           <div class="card-lprice">네이버 <s>22,350원</s></div>
           </div>
-          <div class="card-save">절약 <b>−4,522원</b></div>
           <div class="card-foot">
-            <span class="card-mall">네이버</span>
+            <span class="card-mall card-mall--sell">오늘의집</span>
+            <span class="card-mall card-mall--compare">네이버</span>
             <time class="card-ago" datetime="2026-06-06T05:47:19.072301+00:00" data-ago="2026-06-06T05:47:19.072301+00:00"></time>
           </div>
         </div>
       </a>
     </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:10.031379+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-c0.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-c0.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:10.031379+00:00" data-ago="2026-06-06T05:42:10.031379+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:10.033097+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-c1.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-c1.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:10.033097+00:00" data-ago="2026-06-06T05:42:10.033097+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:10.034414+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-c2.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-c2.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:10.034414+00:00" data-ago="2026-06-06T05:42:10.034414+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:10.035875+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-c3.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-c3.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:10.035875+00:00" data-ago="2026-06-06T05:42:10.035875+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:10.037056+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-c4.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-c4.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:10.037056+00:00" data-ago="2026-06-06T05:42:10.037056+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:06.991616+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-k1.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-k1.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:06.991616+00:00" data-ago="2026-06-06T05:42:06.991616+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:06.992475+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-k2.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-k2.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:06.992475+00:00" data-ago="2026-06-06T05:42:06.992475+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:03.649019+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-r1.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-r1.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:03.649019+00:00" data-ago="2026-06-06T05:42:03.649019+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="card" data-pct="0" data-price="50000" data-gap="1000" data-ts="2026-06-06T05:42:03.650117+00:00" data-mall="" data-search="테스트 상품 (50,000원/무료) ">
-      <a class="card-link" href="https://jangseongwoo.github.io/ssantime/deals/ruliweb-r2.html">
-        <div class="thumb-wrap">
-        <img class="thumb" src="https://jangseongwoo.github.io/ssantime/img/ruliweb-r2.jpg" alt="테스트 상품" loading="lazy" decoding="async" onerror="this.classList.add('thumb--broken');this.removeAttribute('src');">
-        <span class="card-badge">1,000원<span class="off">↓</span></span>
-        <span class="card-ship">무료배송</span>
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">테스트 상품</h2>
-          <div class="card-prices">
-          <div class="card-deal">50,000<span class="won">원</span></div>
-          <div class="card-lprice card-lprice--none">단독딜</div>
-          </div>
-          <div class="card-save">절약 <b>−1,000원</b></div>
-          <div class="card-foot">
-            <time class="card-ago" datetime="2026-06-06T05:42:03.650117+00:00" data-ago="2026-06-06T05:42:03.650117+00:00"></time>
-          </div>
-        </div>
-      </a>
-    </li>
   </ul>
-  <p class="no-results" id="no-results" hidden>검색 결과가 없어요. 다른 키워드로 찾아보세요.</p>
+  <div class="no-results" id="no-results" hidden>
+    <p class="no-results-msg"><b class="no-results-q" id="no-results-q"></b> 딜은 아직 없어요.</p>
+    <p class="no-results-sub">인기 딜을 보거나 카톡 알림을 받아보세요.</p>
+    <button class="no-results-reset" id="no-results-reset" type="button">인기 딜 보기</button>
+    
+  </div>
   <footer class="site-foot">
+    <section class="identity" aria-label="사이트 소개">
+      <p class="identity-q">이 사이트는?</p>
+      <p class="identity-a">싼타임 핫딜은 루리웹·뽐뿌·퀘이사존의 핫딜을 네이버 최저가와 비교해, <b>네이버보다 싼 딜만</b> 골라 모아드려요. 저희가 직접 판매하지는 않아요.</p>
+    </section>
     <p>싼타임 핫딜 · 가격은 수집 시점 기준이며 실제와 다를 수 있어요.</p>
+    <p class="affiliate-notice">이 사이트는 쿠팡 파트너스 등 제휴 마케팅 활동의 일환으로, 이에 따라 일정액의 수수료를 제공받을 수 있습니다.</p>
   </footer>
   <script>(function(){'use strict';
 function ssAgo(iso){var d=new Date(iso);if(isNaN(d))return '';var s=Math.floor((Date.now()-d.getTime())/1000);if(s<60)return '등록 방금 전';var m=Math.floor(s/60);if(m<60)return '등록 '+m+'분 전';var h=Math.floor(m/60);if(h<24)return '등록 '+h+'시간 전';var dd=Math.floor(h/24);if(dd<7)return '등록 '+dd+'일 전';return '등록 '+(d.getMonth()+1)+'월 '+d.getDate()+'일';}function ssFillTimes(root){(root||document).querySelectorAll('[data-ago]').forEach(function(el){var t=ssAgo(el.getAttribute('data-ago'));if(t)el.textContent=t;});}function ssApplyToggleState(){var dark=document.documentElement.getAttribute('data-theme')==='dark';document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.setAttribute('aria-pressed',dark?'true':'false');b.setAttribute('aria-label',dark?'라이트 모드로 전환':'다크 모드로 전환');b.setAttribute('title',dark?'라이트 모드로 전환':'다크 모드로 전환');});}function ssInitTheme(){document.querySelectorAll('[data-theme-toggle]').forEach(function(btn){btn.addEventListener('click',function(){var cur=document.documentElement.getAttribute('data-theme');var sysDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var isDark=cur==='dark'||(cur!=='light'&&sysDark);var next=isDark?'light':'dark';document.documentElement.setAttribute('data-theme',next);try{localStorage.setItem('ssantime-theme',next);}catch(e){}ssApplyToggleState();});});ssApplyToggleState();}
@@ -451,13 +293,16 @@ var origin=cards.slice();
 var search=document.getElementById('search');
 var clearBtn=document.getElementById('search-clear');
 var noRes=document.getElementById('no-results');
+var noResQ=document.getElementById('no-results-q');
+var noResReset=document.getElementById('no-results-reset');
 var countEl=document.getElementById('deal-count');
-var state={q:'',sort:'discount',mall:''};
+var state={q:'',sort:'savings',mall:''};
 function num(c,k){return parseFloat(c.getAttribute(k))||0;}
 function apply(){
   var q=state.q.trim().toLowerCase();
   var arr=origin.slice();
-  if(state.sort==='discount'){arr.sort(function(a,b){return num(b,'data-pct')-num(a,'data-pct')||num(b,'data-gap')-num(a,'data-gap');});}
+  if(state.sort==='savings'){arr.sort(function(a,b){return num(b,'data-gap')-num(a,'data-gap')||num(b,'data-pct')-num(a,'data-pct');});}
+  else if(state.sort==='discount'){arr.sort(function(a,b){return num(b,'data-pct')-num(a,'data-pct')||num(b,'data-gap')-num(a,'data-gap');});}
   else if(state.sort==='price'){arr.sort(function(a,b){var pa=num(a,'data-price')||Infinity,pb=num(b,'data-price')||Infinity;return pa-pb;});}
   // recent: 원본순서(최신순) 유지
   var shown=0;
@@ -468,8 +313,10 @@ function apply(){
   });
   grid.style.display='';
   if(noRes)noRes.hidden=shown!==0;
+  if(noResQ){var qd=state.q.trim();noResQ.textContent=qd?('"'+qd+'"'):'그 키워드의';}
   if(countEl)countEl.textContent=shown+'개';
 }
+if(noResReset){noResReset.addEventListener('click',function(){state.q='';if(search){search.value='';}if(clearBtn){clearBtn.hidden=true;}apply();if(search){search.focus();}});}
 if(search){search.addEventListener('input',function(){state.q=search.value;if(clearBtn)clearBtn.hidden=!search.value;apply();});}
 if(clearBtn){clearBtn.addEventListener('click',function(){search.value='';state.q='';clearBtn.hidden=true;search.focus();apply();});}
 document.querySelectorAll('[data-sort]').forEach(function(btn){btn.addEventListener('click',function(){state.sort=btn.getAttribute('data-sort');document.querySelectorAll('[data-sort]').forEach(function(b){var on=b===btn;b.classList.toggle('seg--active',on);b.setAttribute('aria-pressed',on?'true':'false');});apply();});});
