@@ -108,9 +108,6 @@ button{font-family:inherit;cursor:pointer}
 .card-link{display:flex;flex-direction:column;height:100%;text-decoration:none;color:inherit}
 .thumb-wrap{position:relative;aspect-ratio:1/1;overflow:hidden;background:
   linear-gradient(135deg,var(--card-2),color-mix(in srgb,var(--card-2) 55%,var(--bg)))}
-.thumb-wrap::after{content:'';position:absolute;top:0;right:0;z-index:1;pointer-events:none;
-  width:72px;height:72px;
-  background:radial-gradient(circle at top right,var(--card) 0 34px,transparent 56px)}
 .thumb{width:100%;height:100%;object-fit:cover;object-position:center 42%;
   transform:scale(1.06);transition:transform .35s var(--ease)}
 .card:hover .thumb{transform:scale(1.09)}
