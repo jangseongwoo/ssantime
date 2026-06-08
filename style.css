@@ -134,10 +134,6 @@ button{font-family:inherit;cursor:pointer}
 .card-end{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;
   font-size:12px;font-weight:800;color:#fff;background:rgba(20,20,20,.72);
   padding:3px 10px;border-radius:var(--r-pill);letter-spacing:-.01em}
-.card-ship{position:absolute;left:8px;bottom:8px;z-index:2;
-  background:color-mix(in srgb,var(--brand-strong) 92%,#000);color:#fff;
-  font-size:10.5px;font-weight:800;letter-spacing:-.01em;padding:3px 7px;border-radius:7px;
-  box-shadow:0 2px 6px rgba(0,0,0,.25)}
 .card-body{display:flex;flex-direction:column;gap:5px;padding:10px 11px 11px;flex:1}
 .card-title{font-size:14px;font-weight:700;line-height:1.36;color:var(--ink);
   letter-spacing:-.01em;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;
@@ -201,7 +197,7 @@ button{font-family:inherit;cursor:pointer}
 .brand-tag--mini{width:22px;height:22px;border-radius:8px;font-size:14px;
   box-shadow:0 2px 7px rgba(15,169,104,.32)}
 .deal{max-width:var(--maxw-read);margin:0 auto;padding:8px 18px 60px}
-.deal-figure{margin:0 0 18px;border-radius:var(--r-lg);overflow:hidden;background:var(--card-2);
+.deal-figure{position:relative;margin:0 0 18px;border-radius:var(--r-lg);overflow:hidden;background:var(--card-2);
   box-shadow:var(--shadow-1);aspect-ratio:1/1}
 .deal-figure .deal-img{width:100%;height:100%;object-fit:contain;background:#fff}
 .deal-figure--empty{display:grid;place-items:center;align-content:center;gap:10px;aspect-ratio:16/9;
@@ -211,29 +207,23 @@ button{font-family:inherit;cursor:pointer}
   font-weight:900;font-size:28px;box-shadow:0 5px 16px rgba(15,169,104,.3)}
 .ph-mark{font-weight:800;font-size:15px;color:var(--ink-3);letter-spacing:.05em}
 .deal-head{margin-bottom:18px}
-.badge-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.badge-discount{display:inline-flex;align-items:center;background:linear-gradient(150deg,var(--hot),var(--hot-ink));
+.badge-discount{position:absolute;top:10px;right:10px;z-index:2;display:inline-flex;align-items:center;
+  background:linear-gradient(150deg,var(--hot),var(--hot-ink));
   color:#fff;font-size:15px;font-weight:900;letter-spacing:-.01em;padding:6px 13px;border-radius:var(--r-pill);
-  box-shadow:0 5px 16px rgba(217,54,62,.4)}
+  box-shadow:0 0 0 2px rgba(255,255,255,.9),0 5px 16px rgba(217,54,62,.4)}
 .badge-discount .off{font-size:.82em;margin-left:1px}
 .badge-discount--solo{background:var(--ink);box-shadow:0 5px 16px rgba(0,0,0,.28)}
 .badge-discount--soft{background:var(--ink-3);box-shadow:0 4px 12px rgba(0,0,0,.2)}
-.badge-ship{display:inline-flex;align-items:center;background:var(--brand-soft);color:var(--save-ink);
-  font-size:13px;font-weight:800;letter-spacing:-.01em;padding:6px 12px;border-radius:var(--r-pill)}
 .deal-title{font-size:23px;line-height:1.35;letter-spacing:-.02em;font-weight:800}
 .prices{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
   padding:6px 20px;margin-bottom:14px;box-shadow:var(--shadow-1)}
 .row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
   padding:15px 0;border-bottom:1px dashed var(--line)}
 .row--gap{border-bottom:0}
-.row--ship{padding:10px 0 14px;border-bottom:1px dashed var(--line);justify-content:flex-start}
 .row-key{font-size:14px;color:var(--ink-2);font-weight:600;flex:0 0 auto}
 .row-val{text-align:right}
 .deal-total{font-size:30px;font-weight:900;letter-spacing:-.03em;color:var(--ink)}
 .deal-total .won{font-size:.55em}
-.ship-chip{font-size:12.5px;font-weight:700;color:var(--save-ink);background:var(--brand-soft);
-  padding:4px 10px;border-radius:var(--r-pill)}
-.ship-chip--unknown{color:var(--ink-2);background:var(--card-2)}
 .lprice{font-size:15px;color:var(--ink-2);font-weight:600}
 .lprice s{color:var(--strike);font-weight:700;text-decoration-thickness:1.5px;
   text-decoration-color:var(--strike-line)}
@@ -296,8 +286,8 @@ button{font-family:inherit;cursor:pointer}
 .identity-a{margin:0;font-size:12.5px;line-height:1.6;color:var(--ink-3);word-break:keep-all}
 .identity-a b{color:var(--save-ink);font-weight:800}
 .page-deal .identity{margin-top:24px}
-.affiliate-notice{max-width:var(--maxw-read);margin:12px auto 0;padding:0 16px;text-align:center;
-  font-size:12px;line-height:1.5;font-weight:400;color:var(--ink-ghost)}
+.affiliate-notice{max-width:var(--maxw-read);margin:10px auto 0;padding:0 16px;text-align:center;
+  font-size:10.5px;line-height:1.45;font-weight:400;color:#C7CCD2}
 .detail-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;
   margin-top:24px;padding-top:18px;border-top:1px solid var(--line);flex-wrap:wrap}
 .ago{color:var(--ink-3);font-size:13px}
