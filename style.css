@@ -219,6 +219,7 @@ button{font-family:inherit;cursor:pointer}
   box-shadow:0 5px 16px rgba(217,54,62,.4)}
 .badge-discount .off{font-size:.82em;margin-left:1px}
 .badge-discount--solo{background:var(--ink);box-shadow:0 5px 16px rgba(0,0,0,.28)}
+.badge-discount--soft{background:var(--ink-3);box-shadow:0 4px 12px rgba(0,0,0,.2)}
 .badge-ship{display:inline-flex;align-items:center;background:var(--brand-soft);color:var(--save-ink);
   font-size:13px;font-weight:800;letter-spacing:-.01em;padding:6px 12px;border-radius:var(--r-pill)}
 .deal-title{font-size:23px;line-height:1.35;letter-spacing:-.02em;font-weight:800}

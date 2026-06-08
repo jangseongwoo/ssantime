@@ -630,10 +630,11 @@
   <script>(function(){'use strict';
 function ssAgo(iso){var d=new Date(iso);if(isNaN(d))return '';var s=Math.floor((Date.now()-d.getTime())/1000);if(s<60)return '등록 방금 전';var m=Math.floor(s/60);if(m<60)return '등록 '+m+'분 전';var h=Math.floor(m/60);if(h<24)return '등록 '+h+'시간 전';var dd=Math.floor(h/24);if(dd<7)return '등록 '+dd+'일 전';return '등록 '+(d.getMonth()+1)+'월 '+d.getDate()+'일';}function ssFillTimes(root){(root||document).querySelectorAll('[data-ago]').forEach(function(el){var t=ssAgo(el.getAttribute('data-ago'));if(t)el.textContent=t;});}
 ssFillTimes();
-var now=document.querySelector('[data-now]');if(now){var n=new Date();now.textContent='업데이트 '+((n.getMonth()+1))+'월 '+n.getDate()+'일 '+('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2);}
 var grid=document.getElementById('deal-grid');if(!grid)return;
 var cards=[].slice.call(grid.querySelectorAll('.card'));
 var origin=cards.slice();
+var now=document.querySelector('[data-now]');
+if(now){var nts=origin.length?origin[0].getAttribute('data-ts'):'';var nd=nts?new Date(nts):null;if(nd&&!isNaN(nd)){var as=Math.floor((Date.now()-nd.getTime())/1000),am=Math.floor(as/60),ah=Math.floor(am/60),ad=Math.floor(ah/24);var rel=as<60?'방금 전':am<60?am+'분 전':ah<24?ah+'시간 전':ad+'일 전';now.textContent='최근 딜 '+rel+' 등록';}else{now.textContent='';}}
 var search=document.getElementById('search');
 var clearBtn=document.getElementById('search-clear');
 var noRes=document.getElementById('no-results');
