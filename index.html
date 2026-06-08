@@ -34,9 +34,9 @@
     </div>
     <div class="sort-row">
       <div class="sort-seg" role="tablist" aria-label="정렬">
-        <button class="seg seg--active" type="button" data-sort="savings" aria-pressed="true">절약액순</button>
+        <button class="seg" type="button" data-sort="savings" aria-pressed="false">절약액순</button>
         <button class="seg" type="button" data-sort="discount" aria-pressed="false">할인율순</button>
-        <button class="seg" type="button" data-sort="recent" aria-pressed="false">최신순</button>
+        <button class="seg seg--active" type="button" data-sort="recent" aria-pressed="true">최신순</button>
         <button class="seg" type="button" data-sort="price" aria-pressed="false">가격순</button>
       </div>
     </div>
@@ -614,7 +614,7 @@ var noRes=document.getElementById('no-results');
 var noResQ=document.getElementById('no-results-q');
 var noResReset=document.getElementById('no-results-reset');
 var countEl=document.getElementById('deal-count');
-var state={q:'',sort:'savings',mall:''};
+var state={q:'',sort:'recent',mall:''};
 function num(c,k){return parseFloat(c.getAttribute(k))||0;}
 function apply(){
   var q=state.q.trim().toLowerCase();
