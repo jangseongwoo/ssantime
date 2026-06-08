@@ -202,6 +202,9 @@ button{font-family:inherit;cursor:pointer}
 .brand-tag--mini{width:22px;height:22px;border-radius:8px;font-size:14px;
   box-shadow:0 2px 7px rgba(15,169,104,.32)}
 .deal{max-width:var(--maxw-read);margin:0 auto;padding:8px 18px 60px}
+.deal-intro{margin:2px 0 14px;text-align:center;font-size:13px;font-weight:700;
+  letter-spacing:-.01em;color:var(--ink-3)}
+.deal-intro b{color:var(--save-ink);font-weight:800}
 .deal-figure{position:relative;margin:0 0 18px;border-radius:var(--r-lg);overflow:hidden;background:var(--card-2);
   box-shadow:var(--shadow-1);aspect-ratio:1/1}
 .deal-figure .deal-img{width:100%;height:100%;object-fit:contain;background:#fff}
