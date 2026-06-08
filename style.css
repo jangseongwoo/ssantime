@@ -78,6 +78,10 @@ button{font-family:inherit;cursor:pointer}
   margin:12px auto;padding:0 16px 28px;grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (min-width:560px){.deal-grid{gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (min-width:820px){.deal-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.to-top{position:fixed;right:16px;bottom:16px;z-index:30;width:46px;height:46px;border:0;
+  border-radius:50%;background:var(--brand-strong);color:#fff;font-size:22px;font-weight:900;line-height:1;
+  box-shadow:0 6px 18px rgba(15,169,104,.4);cursor:pointer}
+.to-top[hidden]{display:none}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
   overflow:hidden;box-shadow:var(--shadow-1);transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
 @keyframes ss-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
