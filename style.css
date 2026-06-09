@@ -300,12 +300,12 @@ button{font-family:inherit;cursor:pointer}
 .detail-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;
   margin-top:24px;padding-top:18px;border-top:1px solid var(--line);flex-wrap:wrap}
 .ago{color:var(--ink-3);font-size:13px}
-.share-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
-  margin:14px auto 0;padding:9px 16px;border:1px solid var(--line);background:transparent;
-  color:var(--ink-3);border-radius:var(--r-pill);font-weight:700;font-size:13.5px;
-  transition:background .15s,border-color .15s,color .15s}
-.share-btn:hover{background:var(--card-2);color:var(--ink-2)}
-.share-btn.copied{color:var(--save-ink);border-color:var(--brand)}
+.share-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  margin:20px 0 0;padding:14px 16px;border:1.5px solid var(--line);background:var(--card);
+  color:var(--ink);border-radius:var(--r-md);font-weight:800;font-size:15px;
+  box-shadow:var(--shadow-1);transition:background .15s,border-color .15s,color .15s}
+.share-btn:hover{background:var(--card-2);border-color:var(--ink-3)}
+.share-btn.copied{color:var(--save-ink);border-color:var(--brand);background:var(--brand-soft)}
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms !important;animation-delay:0ms !important;transition-duration:.001ms !important}
   .deal-grid.js-anim .card{animation:none;opacity:1;transform:none}
