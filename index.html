@@ -2090,7 +2090,7 @@
     <p class="affiliate-notice">이 사이트는 쿠팡 파트너스 등 제휴 마케팅 활동의 일환으로, 이에 따라 일정액의 수수료를 제공받을 수 있습니다.</p>
   </footer>
   <script>(function(){'use strict';
-function ssAgo(iso){var d=new Date(iso);if(isNaN(d))return '';var s=Math.floor((Date.now()-d.getTime())/1000);if(s<60)return '등록 방금 전';var m=Math.floor(s/60);if(m<60)return '등록 '+m+'분 전';var h=Math.floor(m/60);if(h<24)return '등록 '+h+'시간 전';var dd=Math.floor(h/24);if(dd<7)return '등록 '+dd+'일 전';return '등록 '+(d.getMonth()+1)+'월 '+d.getDate()+'일';}function ssFillTimes(root){(root||document).querySelectorAll('[data-ago]').forEach(function(el){var t=ssAgo(el.getAttribute('data-ago'));if(t)el.textContent=t;});}
+function ssAgo(iso){var d=new Date(iso);if(isNaN(d))return '';var s=Math.floor((Date.now()-d.getTime())/1000);if(s<60)return '등록 방금 전';var m=Math.floor(s/60);if(m<60)return '등록 '+m+'분 전';var h=Math.floor(m/60);if(h<24)return '등록 '+h+'시간 전';var dd=Math.floor(h/24);if(dd<7)return '등록 '+dd+'일 전';return '등록 '+(d.getMonth()+1)+'월 '+d.getDate()+'일';}function ssFillTimes(root){(root||document).querySelectorAll('[data-ago]').forEach(function(el){var t=ssAgo(el.getAttribute('data-ago'));if(t)el.textContent=t;});}function ssGa(n,p){try{if(typeof window.gtag==='function'){window.gtag('event',n,p||{});}}catch(e){}}function ssScrollDepth(){var ms=[25,50,75],sent={};window.addEventListener('scroll',function(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;if(max<=0)return;var p=(h.scrollTop||document.body.scrollTop)/max*100;ms.forEach(function(m){if(!sent[m]&&p>=m){sent[m]=1;ssGa('scroll_depth',{percent_scrolled:m});}});},{passive:true});}
 ssFillTimes();
 var grid=document.getElementById('deal-grid');if(!grid)return;
 var cards=[].slice.call(grid.querySelectorAll('.card'));
@@ -2137,6 +2137,16 @@ apply();
 grid.classList.add('js-anim');
 var toTop=document.getElementById('to-top');
 if(toTop){window.addEventListener('scroll',function(){toTop.hidden=window.scrollY<600;},{passive:true});toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+function cItem(c,i){var a=c.querySelector('.card-link'),href=a?a.getAttribute('href'):'';var id=(href.match(/deals\/([a-z0-9]+)\.html/)||[])[1]||href;var t=c.querySelector('.card-title');return {item_id:id,item_name:t?t.textContent.slice(0,80):'',price:parseInt(c.getAttribute('data-price'),10)||undefined,index:i,item_category:c.getAttribute('data-category')||'',item_brand:c.getAttribute('data-mall')||''};}
+var impQ=[],impT=null;
+function impFlush(){if(!impQ.length)return;ssGa('view_item_list',{item_list_id:'deal_grid',item_list_name:'딜 목록',items:impQ.splice(0,impQ.length)});}
+if('IntersectionObserver' in window){var impSeen={};var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var c=e.target,i=origin.indexOf(c);var a=c.querySelector('.card-link'),key=a?a.getAttribute('href'):String(i);if(impSeen[key])return;impSeen[key]=1;io.unobserve(c);impQ.push(cItem(c,i));if(impQ.length>=10){impFlush();}else{clearTimeout(impT);impT=setTimeout(impFlush,2000);}});},{threshold:0.5});origin.forEach(function(c){io.observe(c);});window.addEventListener('pagehide',impFlush);}
+grid.addEventListener('click',function(ev){var t=ev.target;while(t&&t!==grid&&!(t.classList&&t.classList.contains('card-link'))){t=t.parentNode;}if(!t||t===grid)return;var c=t;while(c&&!(c.classList&&c.classList.contains('card'))){c=c.parentNode;}if(!c)return;ssGa('select_item',{item_list_id:'deal_grid',items:[cItem(c,origin.indexOf(c))]});});
+if(search){var gaQT=null;search.addEventListener('input',function(){clearTimeout(gaQT);gaQT=setTimeout(function(){var q=search.value.trim();if(q){ssGa('search',{search_term:q.slice(0,100)});}},1200);});}
+document.querySelectorAll('[data-sort]').forEach(function(b){b.addEventListener('click',function(){ssGa('sort_use',{sort_type:b.getAttribute('data-sort')||''});});});
+document.querySelectorAll('[data-mall-chip]').forEach(function(b){b.addEventListener('click',function(){ssGa('filter_use',{filter_type:'mall',filter_value:b.getAttribute('data-mall-chip')||'all'});});});
+document.querySelectorAll('[data-cat-chip]').forEach(function(b){b.addEventListener('click',function(){ssGa('filter_use',{filter_type:'category',filter_value:b.getAttribute('data-cat-chip')||'all'});});});
+ssScrollDepth();
 })();</script>
 </body>
 </html>
