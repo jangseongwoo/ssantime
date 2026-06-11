@@ -14,6 +14,9 @@
   <meta name="color-scheme" content="only light">
   <meta name="description" content="싼타임 핫딜 · 네이버 최저가와 비교해 더 싼 핫딜만 모았어요">
   <meta name="theme-color" content="#F7F8F6">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:title" content="싼타임 핫딜">
   <meta property="og:description" content="싼타임 핫딜 · 네이버 최저가와 비교해 더 싼 핫딜만 모았어요">
@@ -32,7 +35,7 @@
     </div>
     <p class="lead">네이버보다 <b class="lead-em">싼</b> 핫딜만</p>
     <p class="lead-sub">인터넷에 올라온 핫딜을 네이버 최저가와 비교해 <b>더 싼 것</b>만 골라드려요.</p>
-    <p class="updated">오늘은 네이버보다 싼 딜 <span class="deal-count" id="deal-count">100개</span>를 엄선했어요 · <time id="updated-at" data-now>매시간 자동 갱신</time></p>
+    <p class="updated">오늘은 네이버보다 싼 딜 <span class="deal-count" id="deal-count">100개</span>를 엄선했어요 · <time id="updated-at" data-now></time></p>
     <p class="time-note">⏱ 핫딜은 시점에 따라 가격·재고가 빠르게 바뀌거나 마감될 수 있어요.</p>
   </header>
   <div class="controls" role="search">
@@ -2098,7 +2101,7 @@ var grid=document.getElementById('deal-grid');if(!grid)return;
 var cards=[].slice.call(grid.querySelectorAll('.card'));
 var origin=cards.slice();
 var now=document.querySelector('[data-now]');
-if(now){var nts=origin.length?origin[0].getAttribute('data-ts'):'';var nd=nts?new Date(nts):null;if(nd&&!isNaN(nd)){var as=Math.floor((Date.now()-nd.getTime())/1000),am=Math.floor(as/60),ah=Math.floor(am/60),ad=Math.floor(ah/24);var rel=as<60?'방금 전':am<60?am+'분 전':ah<24?ah+'시간 전':ad+'일 전';now.textContent='매시간 자동 갱신 · 최근 딜 '+rel+' 등록';}else{now.textContent='매시간 자동 갱신';}}
+if(now){var nts=origin.length?origin[0].getAttribute('data-ts'):'';var nd=nts?new Date(nts):null;if(nd&&!isNaN(nd)){var as=Math.floor((Date.now()-nd.getTime())/1000),am=Math.floor(as/60),ah=Math.floor(am/60),ad=Math.floor(ah/24);var rel=as<60?'방금 전':am<60?am+'분 전':ah<24?ah+'시간 전':ad+'일 전';now.textContent='최근 딜 '+rel+' 등록';}else{now.textContent='';}}
 var search=document.getElementById('search');
 var clearBtn=document.getElementById('search-clear');
 var noRes=document.getElementById('no-results');

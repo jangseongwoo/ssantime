@@ -253,6 +253,8 @@ button{font-family:inherit;cursor:pointer}
 .coupon-link{display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 12px;background:var(--brand-soft);border:1.5px solid var(--brand);border-radius:10px;color:var(--brand-strong);font-weight:800;font-size:13.5px;text-decoration:none}
 .coupon-link:active{transform:scale(.98)}
 .guide-body{margin:0;font-size:13.5px;line-height:1.6;color:var(--ink-2);white-space:pre-line;word-break:keep-all}
+.guide-warn{margin:0 0 8px;padding:9px 11px;background:#FFF7E6;border:1px solid #F2DFAE;border-radius:9px;color:#7A4F00;font-size:13px;line-height:1.55;word-break:keep-all}
+.guide-warn b{color:#6B4400}
 .price-basis{display:flex;align-items:center;justify-content:center;gap:6px 14px;flex-wrap:wrap;
   margin:0 2px 16px;font-size:13.5px;color:var(--ink-2);word-break:keep-all}
 .basis-time{font-weight:700;color:var(--ink-2);word-break:keep-all}
